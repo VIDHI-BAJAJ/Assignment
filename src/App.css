@@ -1,0 +1,32 @@
+/* App.css */
+
+/* Wrapper container */
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex container for both headers and list items */
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+
+.grid-line {
+  position: relative;
+}
+
+.grid-line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 1px;
+  background-color: gray;
+}
+
+.grid-line:last-child::after {
+  display: none; /* No line after the last column */
+}
